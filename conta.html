@@ -95,10 +95,25 @@
     else() {
         exibir();
     }
-    }
     function exibir() {
        alert("Abertura da conta efetuada com sucesso");
-        
+       document.write("<div style=\"font-family: sans-serif; width: 75%; margin: 0 auto 0 auto;\"><h1 style=\"margin-left: 25%;\"></h1><br /><b>Nome:</b> "+'<i>'+document.getElementById("nome").value+'</i>'+'<br /><br />'
+            +"<b>CPF:</b> "+'<i>'+document.getElementById("cpf").value+'</i>'+'<br /><br />'
+            +"<b>RG:</b> "+'<i>'+document.getElementById("rg").value+'</i>'+'<br /><br />'
+            +"<b>Data de Nascimento:</b> "+'<i>'+document.getElementById("nasc_cliente").value+'</i>'+'<br /><br />'
+                +"<b>CEP:</b> "+'<i>'+document.getElementById("cep").value+'</i>'+'<br /><br />'
+            +"<b></b> "+'<i>'+document.getElementById("numero").value+'</i>'+'<br /><br />'
+            +"<b>Bairro:</b> "+'<i>'+document.getElementById("bairro").value+'</i>'+'<br /><br />'
+            +"<b>Cidade:</b> "+'<i>'+document.getElementById("cidade").value+'</i>'+'<br /><br />'
+            +"<b>Estado:</b> "+'<i>'+document.getElementById("estado").value+'</i>'+'<br /><br />'
+            +"<b>CEP:</b> "+'<i>'+document.getElementById("cep").value+'</i>'+'<br /><br />'
+            +"<b>Telefone:</b> "+'<i>'+document.getElementById("telefone").value+'</i>'+'<br /><br />'
+            +"<b>Telefone Celular:</b> "+'<i>'+document.getElementById("").value+'</i>'
+            +'<br /><br /><input type=\"submit\" value=\"Sair\" style=\"margin-left: 25%;\" onclick=\"reloadpage();\"></span></div>');
+        }
+        // função criada para que o usuário possa retornar a pagina inicial, após os dados validados serem exibidos na tela. //
+        function reloadpage(){
+            window.location="consultarconta.html"; 
     }
 </script>
 <br>
